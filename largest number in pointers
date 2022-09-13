@@ -1,0 +1,84 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+	int no1,no2;
+
+	int *ptr1,*ptr2;
+
+	
+
+	printf("Enter first number:\n");
+
+	scanf("%d",&no1);
+
+	printf("Enter second number:\n");
+
+	scanf("%d",&no2);
+
+	ptr1=&no1;
+
+	ptr2=&no2;
+
+	if(*ptr1>*ptr2)
+
+	{
+
+	printf("Maximum number is %d",*ptr1);
+
+	}
+
+	else
+
+	{
+
+	printf("Maximum number is %d",*ptr2);
+
+	}
+
+        return 0;
+
+}
+
+
+
+              TEST CASE 1
+                  Enter first number:
+                  0
+                  Enter second number:
+                  4
+                  Maximum number is 4
+
+
+              TEST CASE 2
+                  Enter first number:
+                  5
+                  Enter second number:
+                  0
+                  Maximum number is 5
+
+               TEST CASE 3
+                  Enter first number:
+                   -3
+                  Enter second number:
+                    3
+                   Maximum number is 3
+
+      
+                  TEST CASE 4
+                    Enter first number:
+                    0
+                    Enter second number:
+                     0
+                  Maximum number is 0
+
+
+
+                    TEST CASE 5
+                      Enter first number:
+                      123
+                     Enter second number:
+                      123
+                     Maximum number is 123
